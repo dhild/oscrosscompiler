@@ -1,11 +1,14 @@
-package net.dryanhild.gradle.oscrosscompiler
+package net.dryanhild.gradle.oscrosscompiler.config
 
 /**
  * Created by dhild on 11/3/14.
  */
-class GccConfigExtension {
+class GccConfigExtension implements ToolSource {
+
+    final String name = 'gcc'
 
     String version = '4.92'
+    String compression = '.tar.bz2'
 
     String downloadUrl = "ftp://ftp.gnu.org/gnu/gcc/gcc-${version}/gcc-${version}.tar.bz2"
 
