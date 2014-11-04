@@ -3,7 +3,7 @@ package net.dryanhild.gradle.oscrosscompiler.config
 /**
  * Created by dhild on 11/3/14.
  */
-class MpfrConfigExtension implements ToolSource {
+class MpfrConfigExtension implements ToolSource, Serializable {
 
     final String name = 'mpfr'
 

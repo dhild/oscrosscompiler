@@ -3,7 +3,7 @@ package net.dryanhild.gradle.oscrosscompiler.config
 /**
  * Created by dhild on 11/3/14.
  */
-class MpcConfigExtension implements ToolSource {
+class MpcConfigExtension implements ToolSource, Serializable {
 
     final String name = 'mpc'
 

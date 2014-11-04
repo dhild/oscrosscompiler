@@ -2,7 +2,7 @@ package net.dryanhild.gradle.oscrosscompiler.config
 /**
  * Created by dhild on 11/3/14.
  */
-class BinutilsConfigExtension implements ToolSource {
+class BinutilsConfigExtension implements ToolSource, Serializable {
 
     final String name = 'binutils'
 

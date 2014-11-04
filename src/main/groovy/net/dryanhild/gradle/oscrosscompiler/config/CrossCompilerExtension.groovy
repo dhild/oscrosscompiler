@@ -1,15 +1,10 @@
 package net.dryanhild.gradle.oscrosscompiler.config
-
-import net.dryanhild.gradle.oscrosscompiler.config.BinutilsConfigExtension
-import net.dryanhild.gradle.oscrosscompiler.config.GccConfigExtension
-
 /**
  * Created by dhild on 11/3/14.
  */
-class CrossCompilerExtension {
+class CrossCompilerExtension implements Serializable {
 
-    String gccVersion
-    String targetPlatform
+    String target = "x86_64-elf"
 
     BinutilsConfigExtension binutils = new BinutilsConfigExtension()
     GccConfigExtension gcc = new GccConfigExtension()

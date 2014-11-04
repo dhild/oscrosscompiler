@@ -3,7 +3,7 @@ package net.dryanhild.gradle.oscrosscompiler.config
 /**
  * Created by dhild on 11/3/14.
  */
-class GmpConfigExtension implements ToolSource {
+class GmpConfigExtension implements ToolSource, Serializable {
 
     final String name = 'gmp'
 
