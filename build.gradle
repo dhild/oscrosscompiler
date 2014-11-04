@@ -19,7 +19,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'OS Compiler Plugin',
+        attributes 'Implementation-Title': 'OS Cross Compiler Plugin',
                 'Implementation-Version': version,
                 'Built-By': System.getProperty('user.name'),
                 'Built-Date': new Date(),
